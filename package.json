@@ -1,0 +1,30 @@
+{
+  "name": "hubot-divshot",
+  "version": "0.1.0",
+  "description": "Run divshot commands via hubot",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/matteodepalo/hubot-divshot"
+  },
+  "keywords": [
+    "Divshot",
+    "hubot"
+  ],
+  "author": "Matteo Depalo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/matteodepalo/hubot-divshot/issues"
+  },
+  "homepage": "https://github.com/matteodepalo/hubot-divshot",
+  "dependencies": {
+    "divshot-api": "^0.8.1",
+    "heroku-client": "^1.9.0"
+  },
+  "devDependencies": {
+    "coffee-script": "^1.8.0",
+    "dotenv": "^0.4.0",
+    "hubot": "^2.9.3",
+    "hubot-scripts": "^2.5.16"
+  }
+}
