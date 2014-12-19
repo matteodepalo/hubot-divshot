@@ -4,7 +4,9 @@ hubot-divshot
 ## Installation
 1. `npm install hubot-divshot --save`
 2. Add `hubot-divshot` to `external-scripts.json` (e.g. `["hubot-divshot", "some-other-plugin"]`)
-3. Before deployment, set `DIVSHOT_AUTH_TOKEN` to a Divshot account's API key. This user must have access to the apps you want to use this script on.
+3. Before deployment set:
+  - `DIVSHOT_AUTH_TOKEN` to a Divshot account's API key. This user must have access to the apps you want to use this script on.
+  - `ORGANIZATION_NAME` to the name of your organization.
 
 ## Usage
 
