@@ -8,7 +8,7 @@ hubot-divshot
 
 ## Usage
 
-`hubot divshot promote as-phoenix` will promote as-phoenix from staging to production
+`hubot divshot promote appname` will promote appname from staging to production
 
 ## Debugging
 
