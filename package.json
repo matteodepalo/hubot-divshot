@@ -1,6 +1,6 @@
 {
   "name": "hubot-divshot",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "Run divshot commands via hubot",
   "main": "index.js",
   "repository": {
