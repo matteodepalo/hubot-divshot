@@ -19,6 +19,7 @@
 require('dotenv').load()
 divshot = require('divshot-api')
 api = divshot.createClient(token: process.env.DIVSHOT_AUTH_TOKEN)
+organizationName = process.env.ORGANIZATION_NAME
 
 module.exports = (robot) ->
   robot.respond /divshot promote (.*)/i, (msg) ->
@@ -27,7 +28,7 @@ module.exports = (robot) ->
     msg.reply "Promoting #{appName} from staging to production"
 
     api.apps.list().then (apps) ->
-      appNames = apps['org:alphasights'].map (app) -> app.name
+      appNames = apps["org:#{organizationName}"].map (app) -> app.name
 
       if appNames.indexOf(appName) >= 0
         api.apps.id(appName).releases.env('production').promote 'staging', (err, callback) ->
